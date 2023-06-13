@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100" r="100" fill="#404665"/>
+<circle cx="99.5" cy="99.5" r="94" stroke="black"/>
+<circle cx="100" cy="100" r="88.5" stroke="black"/>
+<circle cx="99.5" cy="99.5" r="83" stroke="black"/>
+<circle cx="100" cy="100" r="77.5" stroke="black"/>
+<circle cx="99.5" cy="99.5" r="72" stroke="black"/>
+<circle cx="100" cy="100" r="66.5" stroke="black"/>
+<circle cx="99.5" cy="99.5" r="61" stroke="black"/>
+<circle cx="100" cy="100" r="55.5" stroke="black"/>
+<circle cx="99.5" cy="99.5" r="50" stroke="black"/>
+<circle cx="100" cy="100" r="44.5" stroke="black"/>
+<circle cx="99.5" cy="99.5" r="39" stroke="black"/>
+<circle cx="100" cy="100" r="35" fill="#A75000"/>
+<mask id="mask0_18_18" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="65" y="65" width="70" height="70">
+<circle cx="100" cy="100" r="35" fill="#ABABAB"/>
+</mask>
+<g mask="url(#mask0_18_18)">
+<rect x="60" y="93" width="75" height="7" fill="white"/>
+</g>
+<circle cx="100" cy="100" r="6" fill="#B8D1DF"/>
+</svg>

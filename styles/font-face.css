@@ -1,0 +1,55 @@
+@font-face {
+	font-family: "CircularSpotifyText";
+	src: url('../resources/fonts/CircularSpotifyText-Medium.otf') format("opentype");
+	font-weight: medium;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CircularSpotifyText";
+	src: url('../resources/fonts/CircularSpotifyText-Bold.otf') format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CircularSpotifyText";
+	src: url('../resources/fonts/CircularSpotifyText-Black.otf') format("opentype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CircularSpotifyText";
+	src: url('../resources/fonts/CircularSpotifyText-Book.otf') format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CircularSpotifyText";
+	src: url('../resources/fonts/CircularSpotifyText-Light.otf') format("opentype");
+	font-weight: light;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CircularSpotifyText";
+	src: url('../resources/fonts/CircularSpotifyText-BlackItalic.otf') format("opentype");
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "CircularSpotifyText";
+	src: url('../resources/fonts/CircularSpotifyText-BookItalic.otf') format("opentype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "CircularSpotifyText";
+	src: url('../resources/fonts/CircularSpotifyText-MediumItalic.otf') format("opentype");
+	font-weight: medium;
+	font-style: italic;
+}

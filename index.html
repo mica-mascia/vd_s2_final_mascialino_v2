@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/index.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png">
+		<title>Mi música</title>
+	</head>
+	<body>
+		
+
+		<scroll-container style="height: 100%; overflow-y: hidden; overflow-x: hidden;">
+			<scroll-page id="page-0" class="py-0" style="height: 100%">
+				<div class="px-0 py-0 banner" style="background-color: black; height: 100vh; overflow-y: hidden; max-height: 100%;">
+					<img src="https://www.itl.cat/pngfile/big/147-1477886_vinyl-record-wallpaper.jpg" style="height:100vh; width:100vw; opacity: 0.5;">
+					<h1  class="d-flex justify-content-center align-items-center top-title green"> Final - Mi música</h1>
+					<div class="d-flex justify-content-center align-items-center soundwaves">
+						<svg width="74" height="39" viewBox="0 0 99 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.29999 27.1C3.79999 27.1 2.39999 26.5 1.39999 25.3C-0.600006 23.1 -0.400006 19.8 1.79999 17.8C27.9 -5.79999 70.2 -5.79999 96.3 17.8C98.5 19.8 98.6 23.1 96.7 25.3C94.7 27.5 91.4 27.6 89.2 25.7C67.1 5.70001 31.1 5.70001 8.99999 25.7C7.89999 26.6 6.59999 27.1 5.29999 27.1Z" fill="#1DB954"/>
+							<path d="M17.3 39C15.8 39 14.3 38.4 13.3 37.2C11.4 35 11.6 31.6 13.8 29.7C33.2 12.8 64.8 12.8 84.3 29.7C86.5 31.6 86.8 35 84.8 37.2C82.9 39.4 79.5 39.7 77.3 37.7C61.7 24.2 36.4 24.2 20.8 37.7C19.7 38.6 18.5 39 17.3 39Z" fill="#1DB954"/>
+							<path d="M68.8 51C67.6 51 66.5 50.6 65.5 49.9C56.6 42.8 41.4 42.8 32.5 49.9C30.2 51.7 26.9 51.3 25 49C23.2 46.7 23.6 43.4 25.9 41.5C38.9 31.3 59.1 31.3 72.1 41.5C74.4 43.3 74.8 46.7 73 49C71.9 50.3 70.4 51 68.8 51Z" fill="#1DB954"/>
+						</svg>
+					</div>
+					<div class="w-100 text-center" style="position: absolute; top: 80vh; left: 2vw; font-size: 4vw">
+						<a href="#page-1">
+							<i class="bi bi-arrow-down-circle mx-auto rounded-circle green arrow-down"></i>
+						</a>
+					</div>
+				</div>
+			</scroll-page>
+	</scroll-container>
+
+
+	<scroll-container>
+		<scroll-page id="page-1">
+			<div class="p-5">
+				<div class="container-fluid px-5 pt-5">
+					<div class="container-fluid px-5 m-0">
+						<div class="row">
+							<div class="col">
+								
+							</div>
+							<div class="col d-flex justify-content-center align-items-center">
+								<div>
+									<h3 class="text-center">¿Es Palermo realmente el problema?</h3>
+									<hr>
+									<h3 class="fw-light">Hay muchas más denuncias de roedores en barrios como Palermo, Villa Urquiza, Caballito, Flores y Mataderos. Esto no quiere decir que los demás barrios sean más limpios, sino que puede deberse a muchas otras cosas; las personas pasan más apuradas y prestando menos atención, prefieren no tener el celular visible, etcétera. Dado que estos barrios con mayor cantidad de denuncias tienen más población, tiene sentido pensar que existe una correlación entre la cantidad de habitantes y la de denuncias. Pero no se puede concluir con esto si un barrio es más limpio que otro. </h3>     
+								</div>
+								
+							</div>
+						</div>
+						<div class="row py-5">
+							<div class="col d-flex justify-content-center align-items-center">
+								<div>
+									<blockquote class="blockquote">
+										<h3 class="text-center">Factor poblacional</h3>
+										<hr>
+										<h3 class="fw-light">Un claro ejemplo de esto es si observamos la cantidad de denuncias por estaciones. Acá podemos ver que lejos de disminuir las denuncias por ratas, aumentan en verano donde la ciudad tiende a estar más vacía por el éxodo turístico en comparación con el invierno. Otro ejemplo menos evidente es por ejemplo el barrio de Villa Devoto, que teniendo solo un cuarto de la población de Palermo posee la mitad de las denuncias de este.</h3>
+									</blockquote>
+									<figcaption class="blockquote-footer pt-5">
+										Censo Nacional de Población, Hogares y Viviendas <cite title="Source Title">INDEC</cite>
+									</figcaption>
+								</div>
+							</div>
+							<div class="col d-flex justify-content-center align-items-center">
+								<div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="row py-5">
+							<div class="col d-flex justify-content-center align-items-center">
+								<div id="dataviz_C"></div>           
+							</div>
+							<div class="col d-flex justify-content-center align-items-center">
+								<div>
+									<h3 class="text-center">El accionar del Estado</h3>
+									<hr>
+									<h3 class="fw-light">Una rata de alcantarilla suele tener entre 7 u 8 crías luego de un tiempo de gestación de 21 días. Sin mencionar la cantidad de veces que una rata podría reproducirse con varias hembras. Si dejáramos pasar el problema, la cantidad de ratas en la ciudad crecería de manera exponencial en cuestión de meses. Vemos en el gráfico que el tiempo promedio de respuesta del gobierno de la ciudad ante denuncias de avistamiento de ratas es de 12 días. Por eso es importante que tomemos responsabilidad ciudadana y denunciemos estos avistamientos a través de los canales de comunicación correspondientes, como GCS Web, App BA, Email o 147.</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+			</div>
+		</scroll-page>
+	</scroll-container>
+		
+
+	<div class="container-fluid px-5 pt-4 border">
+		<div class="row">
+			<div class="col">
+				<p class="py-1">Fuentes</p>
+				<figcaption class="blockquote-footer">
+					Censo Nacional de Población, Hogares y Viviendas 2022. Resultados provisionales. <cite title="Source Title">INDEC</cite>
+				</figcaption>
+				<figcaption class="blockquote-footer">
+					Censo 2010 <cite title="Source Title">INDEC</cite>
+				</figcaption>
+			</div>
+			<div class="col"></div>
+		</div>
+
+	</div>
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+		<!-- <script src="scripts/chart_1.js"></script>
+		<script src="scripts/chart_2.js"></script>
+		<script src="scripts/chart_3.js"></script>
+		<script src="scripts/testtt.js"></script> -->
+	</body>
+</html>
+
+
+

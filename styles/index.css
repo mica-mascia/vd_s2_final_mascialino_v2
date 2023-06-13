@@ -1,0 +1,72 @@
+@import url(font-face.css);
+
+:root{
+	--angle: 35deg;
+}
+html {
+	scroll-behavior: smooth;
+}
+*{
+	font-family: 'CircularSpotifyText', sans-serif;
+	overflow-x:hidden;
+	overflow-y:overlay;
+}
+.green{
+	color: rgba(29,185,84,1);
+}
+.top-title{
+	position: absolute;
+	top:20vh;
+	width: 100vw;
+	height: 20vh;
+	font-weight: bold;
+	font-size: 400%;
+}
+.soundwaves{
+	position: relative;
+	-webkit-transform:rotate(var(--angle));
+	-moz-transform: rotate(var(--angle));
+	-ms-transform: rotate(var(--angle));
+	-o-transform: rotate(var(--angle));
+	transform: rotate(var(--angle));
+	left: 16em;
+	top: -36em;
+}
+.arrow-down:hover{
+	color: rgb(139, 226, 170);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+#chart{
+	overflow-y:auto;
+}
+#chart svg{
+max-width: initial;
+}
+
+.banner {
+	overflow-y: hidden;
+	display: inline-block;
+}
+.bannerText {
+	position: relative;
+}
+
+h3{
+	font-weight: bold !important;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb {
+	background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #1db954;
+}
