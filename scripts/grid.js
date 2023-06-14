@@ -11,7 +11,7 @@ let $step;
 let scroller = scrollama();
 
 // fetch data
-d3.csv("./data/JugadoresArgentina2022.csv", d3.autoType).then(function (data) {
+d3.csv("./data/canciones.csv", d3.autoType).then(function (data) {
   dataChart = data;
   // kick things off
   init();
@@ -72,7 +72,7 @@ function init() {
 }
 
 /* DataViz */
-function createChart(key) {
+/* function createChart(key) {
   let chart = Plot.plot({
     width: wChart,
     height: hChart,
@@ -94,7 +94,7 @@ function createChart(key) {
           padding: 10,
           r: 15,
           anchor: "middle",
-          fill: "puesto",
+          //fill: "puesto",
         })
       ),
       Plot.image(
@@ -127,4 +127,4 @@ function createChart(key) {
 
   d3.select("#scrolly figure svg").remove();
   d3.select("#scrolly figure").append(() => chart);
-}
+} */

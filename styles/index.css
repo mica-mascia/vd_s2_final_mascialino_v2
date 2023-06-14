@@ -72,3 +72,133 @@ h3{
 	background: #1db954;
 	
 }
+/* figure{
+	height: 100vh;
+	background-color: pink;
+} */
+.step{
+	/* background-color: green; */
+	color: white;
+	display: inline-block;
+	width: 75vw;
+	height: 200vh;
+}
+.step.is-active{
+	background-color: green;
+}
+
+/* scrolly copy pasted */
+
+#intro {
+	max-width: 40rem;
+	margin: 1rem auto;
+	text-align: center;
+	color: white
+  }
+  
+  .intro__hed {
+	font-size: 2em;
+	line-height: 1.2;
+	margin: 2rem auto 0.5rem auto;
+  }
+  
+  .intro__dek {
+	color: #8a8a8a;
+  }
+  
+  #intro {
+	margin-bottom: 320px;
+  }
+  
+  #outro {  
+	max-width: 40rem;
+	margin: auto;
+  
+	margin-bottom: 320px;
+	margin-top: 320px;
+	height: 640px;
+  }
+  
+  @media (min-width: 840px) {
+	.nav__examples {
+	  margin-top: 0;
+	  margin-left: 2rem;
+	}
+  }
+  
+  #scrolly {
+	position: relative;
+	/* background-color: #f3f3f3; */
+	padding: 1rem;
+  }
+  
+  #scrolly svg  {
+	display: block;
+	margin: auto;
+  }
+  
+  article {
+	position: relative;
+	padding: 0;
+	max-width: 20rem;
+	margin: 0 auto;
+  }
+  
+  figure {
+	position: -webkit-sticky;
+	position: sticky;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	/* background-color: #8a8a8a; */
+	z-index: 0;
+	height: 100vh;
+	top: 0;
+  }
+  
+  figure p {
+	text-align: center;
+	padding: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 8rem;
+	font-weight: 900;
+	color: #fff;
+  }
+  
+  .step {
+	margin: 0 auto 2rem auto;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.1);
+	height: 100vh;
+  }
+  
+  .step:last-child {
+	margin-bottom: 0;
+  }
+  
+  .step.is-active p {
+	background-color: goldenrod;
+	color: #3b3b3b;
+  }
+  
+  .step p {
+	text-align: center;
+	padding: 1rem;
+	font-size: 1.5rem;
+	background-color: #3b3b3b;
+  }
+  
+  /* Plot */
+  g[aria-label="text"] text {
+	font-weight: bold;
+	font-size: 9px;
+	text-shadow: -2px -2px 0px whitesmoke, -2px -1px 0px whitesmoke, -2px 0px 0px whitesmoke, -2px 1px 0px whitesmoke, -2px 2px 0px whitesmoke, -1px -2px 0px whitesmoke, -1px -1px 0px whitesmoke, -1px 0px 0px whitesmoke, -1px 1px 0px whitesmoke, -1px 2px 0px whitesmoke, 0px -2px 0px whitesmoke, 0px -1px 0px whitesmoke, 0px 1px 0px whitesmoke, 0px 2px 0px whitesmoke, 1px -2px 0px whitesmoke, 1px -1px 0px whitesmoke, 1px 0px 0px whitesmoke, 1px 1px 0px whitesmoke, 1px 2px 0px whitesmoke, 2px -2px 0px whitesmoke, 2px -1px 0px whitesmoke, 2px 0px 0px whitesmoke, 2px 1px 0px whitesmoke, 2px 2px 0px whitesmoke;
+  }
