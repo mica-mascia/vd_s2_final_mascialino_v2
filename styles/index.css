@@ -1,60 +1,26 @@
 @import url(font-face.css);
 
+/*#region general*/
 :root{
 	--angle: 35deg;
 }
+
 html {
 	scroll-behavior: smooth;
 }
+
 *{
 	font-family: 'CircularSpotifyText', sans-serif;
 	overflow-x:hidden;
 	overflow-y:overlay;
 }
+
 .green{
 	color: rgba(29,185,84,1);
 }
-.top-title{
-	position: absolute;
-	top:20vh;
-	width: 100vw;
-	height: 20vh;
-	font-weight: bold;
-	font-size: 400%;
-}
-.soundwaves{
-	position: relative;
-	-webkit-transform:rotate(var(--angle));
-	-moz-transform: rotate(var(--angle));
-	-ms-transform: rotate(var(--angle));
-	-o-transform: rotate(var(--angle));
-	transform: rotate(var(--angle));
-	left: 16em;
-	top: -36em;
-}
-.arrow-down:hover{
-	color: rgb(139, 226, 170);
-	background-color: rgba(255, 255, 255, 0.2);
-}
-#chart{
-	overflow-y:auto;
-}
-#chart svg{
-max-width: initial;
-}
+/*#endregion general*/
 
-.banner {
-	overflow-y: hidden;
-	display: inline-block;
-}
-.bannerText {
-	position: relative;
-}
-
-h3{
-	font-weight: bold !important;
-}
-
+/*#region scrollbar*/
 ::-webkit-scrollbar {
 	width: 15px;
 }
@@ -72,10 +38,63 @@ h3{
 	background: #1db954;
 	
 }
+/*#endregion scrollbar*/
+
+/*#region banner*/
+.top-title{
+	position: absolute;
+	top:20vh;
+	width: 100vw;
+	height: 20vh;
+	font-weight: bold;
+	font-size: 400%;
+}
+
+.soundwaves{
+	position: relative;
+	-webkit-transform:rotate(var(--angle));
+	-moz-transform: rotate(var(--angle));
+	-ms-transform: rotate(var(--angle));
+	-o-transform: rotate(var(--angle));
+	transform: rotate(var(--angle));
+	left: 16em;
+	top: -36em;
+}
+
+.arrow-down:hover{
+	color: rgb(139, 226, 170);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.banner {
+	overflow-y: hidden;
+	display: inline-block;
+}
+/*#endregion banner*/
+
+/*#region elements*/
+h3{
+	font-weight: bold !important;
+}
+
+p{
+	font-size: small !important;
+}
+/*#endregion elements*/
+
+#chart{
+	overflow-y:auto;
+}
+
+#chart svg{
+max-width: initial;
+}
+
 /* figure{
 	height: 100vh;
 	background-color: pink;
 } */
+
 .step{
 	/* background-color: green; */
 	color: white;
@@ -88,63 +107,18 @@ h3{
 }
 
 /* scrolly copy pasted */
-
-#intro {
-	max-width: 40rem;
-	margin: 1rem auto;
-	text-align: center;
-	color: white
-  }
-  
-  .intro__hed {
-	font-size: 2em;
-	line-height: 1.2;
-	margin: 2rem auto 0.5rem auto;
-  }
-  
-  .intro__dek {
-	color: #8a8a8a;
-  }
-  
-  #intro {
-	margin-bottom: 320px;
-  }
-  
-  #outro {  
-	max-width: 40rem;
-	margin: auto;
-  
-	margin-bottom: 320px;
-	margin-top: 320px;
-	height: 640px;
-  }
-  
-  @media (min-width: 840px) {
-	.nav__examples {
-	  margin-top: 0;
-	  margin-left: 2rem;
-	}
-  }
   
   #scrolly {
 	position: relative;
-	/* background-color: #f3f3f3; */
 	padding: 1rem;
   }
   
-  #scrolly svg  {
+/*   #scrolly svg  {
 	display: block;
 	margin: auto;
-  }
+  } */
   
-  article {
-	position: relative;
-	padding: 0;
-	max-width: 20rem;
-	margin: 0 auto;
-  }
-  
-  figure {
+/*   figure {
 	position: -webkit-sticky;
 	position: sticky;
 	left: 0;
@@ -153,13 +127,12 @@ h3{
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-	/* background-color: #8a8a8a; */
 	z-index: 0;
 	height: 100vh;
 	top: 0;
-  }
+  } */
   
-  figure p {
+/*   figure p {
 	text-align: center;
 	padding: 1rem;
 	position: absolute;
@@ -171,13 +144,14 @@ h3{
 	font-size: 8rem;
 	font-weight: 900;
 	color: #fff;
-  }
+  } */
   
   .step {
 	margin: 0 auto 2rem auto;
 	color: #fff;
 	background-color: rgba(0, 0, 0, 0.1);
 	height: 100vh;
+	font-size: 10px;
   }
   
   .step:last-child {

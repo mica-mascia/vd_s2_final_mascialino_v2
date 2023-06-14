@@ -22,6 +22,7 @@ function handleStepExit(response) {
   console.count("classed");
   d3.select(response.element).classed("is-active", false);
   // }
+  console.log("handleStepExit!")
 }
 
 // scrollama event handlers
@@ -44,7 +45,8 @@ function handleStepEnter(response) {
   // console.log("$step", $step);
   // console.log("key", key);
 
-  createChart(key);
+  // createChart(key); 
+  console.log("handleStepEnter!")
 }
 
 function handleStepProgress(response) {
@@ -53,6 +55,7 @@ function handleStepProgress(response) {
   // $step = d3.select(response.element);
   // console.log($step.attr("data-step"));
   $step.select(".progress").text(d3.format(".1%")(response.progress));
+  console.log("handleStepProgress!")
 }
 
 function init() {
