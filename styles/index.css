@@ -64,9 +64,11 @@ h3{
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #555;
+	background: rgba(109, 109, 109, 0.5);
+	border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #1db954;
+	
 }

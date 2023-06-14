@@ -13,7 +13,7 @@
 		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png">
 		<title>Mi música</title>
 	</head>
-	<body>
+	<body class="bg-dark">
 		
 
 		<scroll-container style="height: 100%; overflow-y: hidden; overflow-x: hidden;">
@@ -29,87 +29,78 @@
 						</svg>
 					</div>
 					<div class="w-100 text-center" style="position: absolute; top: 80vh; left: 2vw; font-size: 4vw">
-						<a href="#page-1">
+						<a href="#scrolly">
 							<i class="bi bi-arrow-down-circle mx-auto rounded-circle green arrow-down"></i>
 						</a>
 					</div>
 				</div>
 			</scroll-page>
-	</scroll-container>
+		</scroll-container>
+
+		<scroll-container id="scrolly" class="mt-2">
+			<scroll-page class="container mx-1">
+				<div>
+					<figure></figure>
+				</div>
+			</scroll-page>
+		</scroll-container>
 
 
-	<scroll-container>
-		<scroll-page id="page-1">
-			<div class="p-5">
-				<div class="container-fluid px-5 pt-5">
-					<div class="container-fluid px-5 m-0">
-						<div class="row">
-							<div class="col">
-								
-							</div>
-							<div class="col d-flex justify-content-center align-items-center">
-								<div>
-									<h3 class="text-center">¿Es Palermo realmente el problema?</h3>
-									<hr>
-									<h3 class="fw-light">Hay muchas más denuncias de roedores en barrios como Palermo, Villa Urquiza, Caballito, Flores y Mataderos. Esto no quiere decir que los demás barrios sean más limpios, sino que puede deberse a muchas otras cosas; las personas pasan más apuradas y prestando menos atención, prefieren no tener el celular visible, etcétera. Dado que estos barrios con mayor cantidad de denuncias tienen más población, tiene sentido pensar que existe una correlación entre la cantidad de habitantes y la de denuncias. Pero no se puede concluir con esto si un barrio es más limpio que otro. </h3>     
+		<!-- <scroll-container>
+			<scroll-page id="page-1">
+				<div class="p-5">
+					<div class="container-fluid px-5 pt-5">
+						<div class="container-fluid px-5 m-0">
+							<div class="row">
+								<div class="col">
+									
 								</div>
-								
-							</div>
-						</div>
-						<div class="row py-5">
-							<div class="col d-flex justify-content-center align-items-center">
-								<div>
-									<blockquote class="blockquote">
-										<h3 class="text-center">Factor poblacional</h3>
+								<div class="col d-flex justify-content-center align-items-center">
+									<div>
+										<h3 class="text-center">¿Es Palermo realmente el problema?</h3>
 										<hr>
-										<h3 class="fw-light">Un claro ejemplo de esto es si observamos la cantidad de denuncias por estaciones. Acá podemos ver que lejos de disminuir las denuncias por ratas, aumentan en verano donde la ciudad tiende a estar más vacía por el éxodo turístico en comparación con el invierno. Otro ejemplo menos evidente es por ejemplo el barrio de Villa Devoto, que teniendo solo un cuarto de la población de Palermo posee la mitad de las denuncias de este.</h3>
-									</blockquote>
-									<figcaption class="blockquote-footer pt-5">
-										Censo Nacional de Población, Hogares y Viviendas <cite title="Source Title">INDEC</cite>
-									</figcaption>
-								</div>
-							</div>
-							<div class="col d-flex justify-content-center align-items-center">
-								<div>
+										<h3 class="fw-light">Hay muchas más denuncias de roedores en barrios como Palermo, Villa Urquiza, Caballito, Flores y Mataderos. Esto no quiere decir que los demás barrios sean más limpios, sino que puede deberse a muchas otras cosas; las personas pasan más apuradas y prestando menos atención, prefieren no tener el celular visible, etcétera. Dado que estos barrios con mayor cantidad de denuncias tienen más población, tiene sentido pensar que existe una correlación entre la cantidad de habitantes y la de denuncias. Pero no se puede concluir con esto si un barrio es más limpio que otro. </h3>     
+									</div>
 									
 								</div>
 							</div>
-						</div>
-						<div class="row py-5">
-							<div class="col d-flex justify-content-center align-items-center">
-								<div id="dataviz_C"></div>           
+							<div class="row py-5">
+								<div class="col d-flex justify-content-center align-items-center">
+									<div>
+										<blockquote class="blockquote">
+											<h3 class="text-center">Factor poblacional</h3>
+											<hr>
+											<h3 class="fw-light">Un claro ejemplo de esto es si observamos la cantidad de denuncias por estaciones. Acá podemos ver que lejos de disminuir las denuncias por ratas, aumentan en verano donde la ciudad tiende a estar más vacía por el éxodo turístico en comparación con el invierno. Otro ejemplo menos evidente es por ejemplo el barrio de Villa Devoto, que teniendo solo un cuarto de la población de Palermo posee la mitad de las denuncias de este.</h3>
+										</blockquote>
+										<figcaption class="blockquote-footer pt-5">
+											Censo Nacional de Población, Hogares y Viviendas <cite title="Source Title">INDEC</cite>
+										</figcaption>
+									</div>
+								</div>
+								<div class="col d-flex justify-content-center align-items-center">
+									<div>
+										
+									</div>
+								</div>
 							</div>
-							<div class="col d-flex justify-content-center align-items-center">
-								<div>
-									<h3 class="text-center">El accionar del Estado</h3>
-									<hr>
-									<h3 class="fw-light">Una rata de alcantarilla suele tener entre 7 u 8 crías luego de un tiempo de gestación de 21 días. Sin mencionar la cantidad de veces que una rata podría reproducirse con varias hembras. Si dejáramos pasar el problema, la cantidad de ratas en la ciudad crecería de manera exponencial en cuestión de meses. Vemos en el gráfico que el tiempo promedio de respuesta del gobierno de la ciudad ante denuncias de avistamiento de ratas es de 12 días. Por eso es importante que tomemos responsabilidad ciudadana y denunciemos estos avistamientos a través de los canales de comunicación correspondientes, como GCS Web, App BA, Email o 147.</h3>
+							<div class="row py-5">
+								<div class="col d-flex justify-content-center align-items-center">
+									<div id="dataviz_C"></div>           
+								</div>
+								<div class="col d-flex justify-content-center align-items-center">
+									<div>
+										<h3 class="text-center">El accionar del Estado</h3>
+										<hr>
+										<h3 class="fw-light">Una rata de alcantarilla suele tener entre 7 u 8 crías luego de un tiempo de gestación de 21 días. Sin mencionar la cantidad de veces que una rata podría reproducirse con varias hembras. Si dejáramos pasar el problema, la cantidad de ratas en la ciudad crecería de manera exponencial en cuestión de meses. Vemos en el gráfico que el tiempo promedio de respuesta del gobierno de la ciudad ante denuncias de avistamiento de ratas es de 12 días. Por eso es importante que tomemos responsabilidad ciudadana y denunciemos estos avistamientos a través de los canales de comunicación correspondientes, como GCS Web, App BA, Email o 147.</h3>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+			
 				</div>
-		
-			</div>
-		</scroll-page>
-	</scroll-container>
-		
-
-	<div class="container-fluid px-5 pt-4 border">
-		<div class="row">
-			<div class="col">
-				<p class="py-1">Fuentes</p>
-				<figcaption class="blockquote-footer">
-					Censo Nacional de Población, Hogares y Viviendas 2022. Resultados provisionales. <cite title="Source Title">INDEC</cite>
-				</figcaption>
-				<figcaption class="blockquote-footer">
-					Censo 2010 <cite title="Source Title">INDEC</cite>
-				</figcaption>
-			</div>
-			<div class="col"></div>
-		</div>
-
-	</div>
+			</scroll-page>
+		</scroll-container> -->
 
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
