@@ -7,12 +7,12 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x:hidden;
+	overflow-y: overlay;
 }
 
 *{
 	font-family: 'CircularSpotifyText', sans-serif;
-	overflow-x:hidden;
-	overflow-y:overlay;
 }
 
 .green{
@@ -90,28 +90,66 @@ p{
 max-width: initial;
 }
 
-/* figure{
-	height: 100vh;
-	background-color: pink;
-} */
+/*#region scrolly start*/
+#scrolly {
+	position: relative;
+	background-color: #f3f3f3;
+	width: 100vw;
+}
+
+.triggers{
+	display: inline-block;
+	position: relative;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(127, 255, 212, 0.278);
+}
 
 .step{
 	/* background-color: green; */
-	color: white;
+	color: rgba(32, 83, 212, 0.307);
 	display: inline-block;
-	width: 75vw;
-	height: 200vh;
-}
-.step.is-active{
-	background-color: green;
+	width: 90vw;
+	height: 100vh;
+	z-index: 2;
 }
 
-/* scrolly copy pasted */
-  
-  #scrolly {
-	position: relative;
-	padding: 1rem;
+#grafico{
+	height: 30vh;
+	width: 100vw;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 10px;
+	margin: 0;
+	background-color: #2f2ab384;
+	z-index: 10;
+	display: inline-block;
+	/* Center everything inside */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.step p {
+	text-align: center;
+	background-color: #3b3b3b;
+}
+/*#endregion scrolly start*/
+
+
+/*#region scrolly active*/
+.step.is-active{
+	background-color: rgba(255, 48, 238, 0.284);
+}
+
+.step.is-active p {
+	background-color: goldenrod;
+	color: #3b3b3b;
   }
+/*#endregion scrolly changed*/
+  
+
   
 /*   #scrolly svg  {
 	display: block;
@@ -146,33 +184,29 @@ max-width: initial;
 	color: #fff;
   } */
   
-  .step {
-	margin: 0 auto 2rem auto;
-	color: #fff;
-	background-color: rgba(0, 0, 0, 0.1);
-	height: 100vh;
-	font-size: 10px;
-  }
-  
-  .step:last-child {
+  /* .step:last-child {
 	margin-bottom: 0;
-  }
+  } */
   
-  .step.is-active p {
-	background-color: goldenrod;
-	color: #3b3b3b;
-  }
+.col.top{
+	display:flex;
+	align-items: flex-end;
+}
+
+/* .col-sm top{
+	display:flex;
+	align-items: flex-top;
+} */
   
-  .step p {
-	text-align: center;
-	padding: 1rem;
-	font-size: 1.5rem;
-	background-color: #3b3b3b;
-  }
+
   
   /* Plot */
-  g[aria-label="text"] text {
+  /* g[aria-label="text"] text {
 	font-weight: bold;
 	font-size: 9px;
 	text-shadow: -2px -2px 0px whitesmoke, -2px -1px 0px whitesmoke, -2px 0px 0px whitesmoke, -2px 1px 0px whitesmoke, -2px 2px 0px whitesmoke, -1px -2px 0px whitesmoke, -1px -1px 0px whitesmoke, -1px 0px 0px whitesmoke, -1px 1px 0px whitesmoke, -1px 2px 0px whitesmoke, 0px -2px 0px whitesmoke, 0px -1px 0px whitesmoke, 0px 1px 0px whitesmoke, 0px 2px 0px whitesmoke, 1px -2px 0px whitesmoke, 1px -1px 0px whitesmoke, 1px 0px 0px whitesmoke, 1px 1px 0px whitesmoke, 1px 2px 0px whitesmoke, 2px -2px 0px whitesmoke, 2px -1px 0px whitesmoke, 2px 0px 0px whitesmoke, 2px 1px 0px whitesmoke, 2px 2px 0px whitesmoke;
+  } */
+
+  svg{
+	background-color: transparent !important;
   }

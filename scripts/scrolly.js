@@ -8,14 +8,14 @@ var scroller = scrollama();
 //scrollama event handlers
 function handleStepEnter(response){
 	//response = {element, direction, index}
-	console.log(response);
+	// console.log(response);
 	//add color to current step
 	response.element.classList.add("is-active");
 }
 
 function handleStepExit(response){
 	//response = {element, direction, index}
-	console.log(response);
+	// console.log(response);
 	//remove color from current steo
 	response.element.classList.remove("is-active");
 }
@@ -25,13 +25,15 @@ function init(){
 	//		This will initialize trigger observations
 	//2. Bind scrollama event handlers
 	scroller
-			.setup({
-				step: "#scrolly article .step",
-				debug: false,
-				offset: 0.5
-			})
-			.onStepEnter(handleStepEnter)
-			.onStepExit(handleStepExit);
+		.setup({
+			step: "#scrolly article .step",
+			debug: true,
+			offset: 0.1,
+		})
+		.onStepEnter(handleStepEnter)
+		.onStepExit(handleStepExit);
+
+	
 
 }
 
