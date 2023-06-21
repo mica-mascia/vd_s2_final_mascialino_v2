@@ -9,14 +9,13 @@
 		<link rel="stylesheet" href="styles/index.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png">
 		<title>Mi música</title>
 	</head>
 	<body class="bg-dark">
 		
 
-		<!-- <scroll-container style="height: 100%; overflow-y: hidden; overflow-x: hidden;">
+		<scroll-container style="height: 100%; overflow-y: hidden; overflow-x: hidden;">
 			<scroll-page id="page-0" class="py-0" style="height: 100%; overflow-y: hidden;">
 				<div class="px-0 py-0 banner" style="background-color: black; height: 100vh; overflow-y: hidden; max-height: 100%;">
 					<img src="https://www.itl.cat/pngfile/big/147-1477886_vinyl-record-wallpaper.jpg" style="height:100vh; width:100vw; opacity: 0.5;">
@@ -44,23 +43,81 @@
 					</div>
 				</div>
 			</scroll-page>
-		</scroll-container> -->
+		</scroll-container>
 
+		
+
+		<section id="scrolly">
+
+			<div id="intro">
+				<section id="titulo" class="green bg-dark"> <h2>Análisis de atributos</h2></section>
+				
+				<section id="prologo">
+					<p>
+						Con unos simples pasos, cualquier usuario de Spotify puede obtener acceso a su API. Desde allí, se pueden obtener datos muy curiosos sobre cualquier canción. 
+						Algunos de estos datos incluyen la <em>bailabilidad</em> de una canción, por ejemplo. Para este análisis, los datos que me llamaron la atención son la fecha de 
+						lanzamiento del álbum al que pertenece determinada canción, y su <em>valence</em> (el índice de alegría de una pista, según la documentación oficial).
+					</p>
+					<p>
+						La hipótesis que me interesaba investigar: ¿Puede ser que exista una correlación entre la estación climática en que se lanza una canción, y qué tan alegre es?
+						Claramente no sería viable investigar todas las canciones de la plataforma, ya que contiene alrededor de 80 millones de pistas en total. 
+						Por esto, el análisis está hecho sobre las 20 canciones más populares a nivel global de la semana del 12 de junio de 2023.
+						A lo largo del análisis surgieron algunas complicaciones más:
+					</p>
+					<ul>
+						<li> 
+							<b class="list-title">¿Cómo considerar la estación?</b>
+							<p>Como no es posible saber dónde se creó la canción, consideré el país natal de cada artista. Quienes sean originarios del hemisferio norte serán
+							considerados según las estaciones del hemisferio norte.</p>
+						</li>
+						<li>
+							<b class="list-title">¿Y si la canción es de más de un artista?</b>
+							<p>
+								En estos casos, es necesario analizar cada artista por separado. Si resulta que todos son originarios del mismo hemisferio, serán considerados de acuerdo
+								a las estaciones de ese hemisferio. Si son de hemisferios distintos... Se elimina la canción de la lista.
+							</p>
+						</li>
+					</ul>
+				</section>
+			</div>
+			
+
+			<div id="graph" style="height: 100vh; width: 100vw; fill: transparent; ">
+				<section id="titulo" class="green bg-dark"> <h2>Gráfico: valence</h2> </section>
+			</div>
+			<section>
+				<p>LOREM IPSUM placeholder text lalala look at me scroll past</p>
+			</section>
+
+			<article class="triggers">
+				
+				<div class="step" data-step="danceability">
+				  <p>Promedio (STEP 3)</p>
+				  <p class="progress">0.0%</p>
+				</div>
+
+				<div class="step" data-step="valence">
+					<p>Valence (STEP 1)</p>
+					<p class="progress">0.0%</p>
+				</div>
+
+				<div class="step" data-step="valence_por_mes">
+				  <p>Meses (STEP 2)</p>
+				  <p class="progress">0.0%</p>
+				</div>
+			  </article>
+		</section>
 		<!-- <div id="graph"></div> -->
-		<div id="graph2" style="height: 100vh; width: 100vw; fill: transparent; "></div>
+		
 
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
-		<script src="scripts/force.js"></script>
-		<script src="scripts/grid.js"></script>
-		<!-- <script src="scripts/scrolly.js"></script> -->
-		<!-- <script src="scripts/chart_1.js"></script>
-		<script src="scripts/chart_2.js"></script>
-		<script src="scripts/chart_3.js"></script>
-		<script src="scripts/testtt.js"></script> -->
+		<script src="https://unpkg.com/scrollama"></script>
+		<script src="scripts/scrolly.js"></script>
+		<script src="scripts/plot.js"></script>
 	</body>
 </html>
 

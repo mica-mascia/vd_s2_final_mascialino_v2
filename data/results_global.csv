@@ -6,16 +6,16 @@ id,cancion,artista,album,lanzamiento,popularidad,danceability,valence,tempo,hemi
 4DHcnVTT87F0zZhRPYmZ3B,Flowers,(Miley Cyrus),Endless Summer Vacation,2023-03-10,91,0.707,0.646,117.999,norte,invierno,resources\img\Flowers.svg
 7FbrGaHYVDmfr7KoLIZnQ7,Cupid - Twin Ver.,(FIFTY FIFTY),The Beginning: Cupid,2023-02-24,98,0.783,0.726,120.018,norte,invierno,resources\img\Cupid - Twin Ver..svg
 2FDTHlrBguDzQkp7PVj16Q,Sprinter,"(Dave, Central Cee)",Sprinter,2023-06-01,91,0.916,0.661,141.095,norte,primavera,resources\img\Sprinter.svg
-368eeEO3Y2uZUQ6S5oIjcu,TQM,(Fuerza Regida),TQM,2023-05-19,94,0.786,0.963,125.107,norte,primavera,
-1odExI7RdWc4BT515LTAwj,Daylight,(David Kushner),Daylight,2023-04-14,98,0.508,0.324,130.09,norte,primavera,
-4Dvkj6JhhA12EX05fT7y2e,As It Was,(Harry Styles),Harry's House,2022-05-20,93,0.52,0.662,173.93,norte,primavera,https://file.notion.so/f/s/5005294e-6137-4ed7-a13e-1abb271365e4/As_It_Was.png
-1Qrg8KqiBpW07V7PNxwwwL,Kill Bill,(SZA),SOS,2022-12-08,94,0.644,0.418,88.98,norte,otoño,
-6XSqqQIy7Lm7SnwxS4NrGx,Classy 101,"(Feid, Young Miko)",Classy 101,2023-03-31,96,0.859,0.672,100.065,norte,primavera,
-0DWdj2oZMBFSzRsi2Cvfzf,TQG,"(KAROL G, Shakira)",MA�ANA SER� BONITO,2023-02-24,96,0.72,0.607,179.974,norte,invierno,
-1s7oOCT8vauUh01PbJD6ps,Calm Down (with Selena Gomez),"(Rema, Selena Gomez)",Rave & Roses Ultra,2023-04-27,82,0.799,0.811,107.008,norte,primavera,
-5xP9lQYA8YQmQh6BOxcAnR,Popular (with Playboi Carti & Madonna) - The Idol Vol. 1 (Music from the HBO Original Series),"(The Weeknd, Playboi Carti, Madonna)",Popular [The Idol Vol. 1 (Music from the HBO Original Series)],2023-06-02,88,0.852,0.83,99.012,norte,primavera,
-1vYXt7VSjH9JIM5oRRo7vA,Dance The Night (From Barbie The Album),(Dua Lipa),Dance The Night (From Barbie The Album),2023-05-25,91,0.671,0.775,110.056,norte,primavera,
-2dHHgzDwk4BJdRwy9uXhTO,Creepin' (with The Weeknd & 21 Savage),"(Metro Boomin, The Weeknd, 21 Savage)",HEROES & VILLAINS,2022-12-02,96,0.715,0.172,97.95,norte,otoño,
-1haJsMtoBhHfvuM7XWuT3W,El Azul,"(Junior H, Peso Pluma)",El Azul,2023-02-10,95,0.558,0.844,143.876,norte,invierno,
-7KA4W4McWYRpgf0fWsJZWB,See You Again (feat. Kali Uchis),"(Tyler, The Creator, Kali Uchis)",Flower Boy,2017-07-21,95,0.558,0.62,78.558,norte,verano,
-5rurggqwwudn9clMdcchxT,"Calling (Spider-Man: Across the Spider-Verse) (Metro Boomin & Swae Lee, NAV, feat. A Boogie Wit da Hoodie)","(Metro Boomin, Swae Lee, NAV, A Boogie Wit da Hoodie)",METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE (SOUNDTRACK FROM AND INSPIRED BY THE MOTION PICTURE),2023-06-02,90,0.631,0.22,140.127,norte,primavera,
+368eeEO3Y2uZUQ6S5oIjcu,TQM,(Fuerza Regida),TQM,2023-05-19,94,0.786,0.963,125.107,norte,primavera,resources\img\TQM.svg
+1odExI7RdWc4BT515LTAwj,Daylight,(David Kushner),Daylight,2023-04-14,98,0.508,0.324,130.09,norte,primavera,resources\img\Daylight.svg
+4Dvkj6JhhA12EX05fT7y2e,As It Was,(Harry Styles),Harry's House,2022-05-20,93,0.52,0.662,173.93,norte,primavera,resources\img\As It Was.svg
+1Qrg8KqiBpW07V7PNxwwwL,Kill Bill,(SZA),SOS,2022-12-08,94,0.644,0.418,88.98,norte,otoño,resources\img\Kill Bill.svg
+6XSqqQIy7Lm7SnwxS4NrGx,Classy 101,"(Feid, Young Miko)",Classy 101,2023-03-31,96,0.859,0.672,100.065,norte,primavera,resources\img\Classy 101.svg
+0DWdj2oZMBFSzRsi2Cvfzf,TQG,"(KAROL G, Shakira)",MA�ANA SER� BONITO,2023-02-24,96,0.72,0.607,179.974,norte,invierno,resources\img\TQG.svg
+1s7oOCT8vauUh01PbJD6ps,Calm Down (with Selena Gomez),"(Rema, Selena Gomez)",Rave & Roses Ultra,2023-04-27,82,0.799,0.811,107.008,norte,primavera,resources\img\Calm Down (with Selena Gomez).svg
+5xP9lQYA8YQmQh6BOxcAnR,Popular (with Playboi Carti & Madonna) - The Idol Vol. 1 (Music from the HBO Original Series),"(The Weeknd, Playboi Carti, Madonna)",Popular [The Idol Vol. 1 (Music from the HBO Original Series)],2023-06-02,88,0.852,0.83,99.012,norte,primavera,resources\img\Popular (with Playboi Carti & Madonna) - The Idol Vol. 1 (Music from the HBO Original Series).svg
+1vYXt7VSjH9JIM5oRRo7vA,Dance The Night (From Barbie The Album),(Dua Lipa),Dance The Night (From Barbie The Album),2023-05-25,91,0.671,0.775,110.056,norte,primavera,resources\img\Dance The Night (From Barbie The Album).svg
+2dHHgzDwk4BJdRwy9uXhTO,Creepin' (with The Weeknd & 21 Savage),"(Metro Boomin, The Weeknd, 21 Savage)",HEROES & VILLAINS,2022-12-02,96,0.715,0.172,97.95,norte,otoño,resources\img\Creepin' (with The Weeknd & 21 Savage).svg
+1haJsMtoBhHfvuM7XWuT3W,El Azul,"(Junior H, Peso Pluma)",El Azul,2023-02-10,95,0.558,0.844,143.876,norte,invierno,resources\img\El Azul.svg
+7KA4W4McWYRpgf0fWsJZWB,See You Again (feat. Kali Uchis),"(Tyler, The Creator, Kali Uchis)",Flower Boy,2017-07-21,95,0.558,0.62,78.558,norte,verano,resources\img\See You Again (feat. Kali Uchis).svg
+5rurggqwwudn9clMdcchxT,"Calling (Spider-Man: Across the Spider-Verse) (Metro Boomin & Swae Lee, NAV, feat. A Boogie Wit da Hoodie)","(Metro Boomin, Swae Lee, NAV, A Boogie Wit da Hoodie)",METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE (SOUNDTRACK FROM AND INSPIRED BY THE MOTION PICTURE),2023-06-02,90,0.631,0.22,140.127,norte,primavera,"resources\img\Calling (Spider-Man_ Across the Spider-Verse) (Metro Boomin & Swae Lee, NAV, feat. A Boogie Wit da Hoodie).svg"

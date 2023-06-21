@@ -1,41 +1,61 @@
-var scrolly = document.querySelector("#scrolly");
-var article = scrolly.querySelector("article");
-var step = article.querySelectorAll(".step");
+// using d3 for convenience
+let main = d3.select("main");
+let scrolly = main.select("#scrolly");
+let $figure = scrolly.select("#graph");
+let dataChart = [];
+let $step;
 
-//init the scrollama
-var scroller = scrollama();
+// initialize the scrollama
+let scroller = scrollama();
 
-//scrollama event handlers
-function handleStepEnter(response){
-	//response = {element, direction, index}
-	// console.log(response);
-	//add color to current step
-	response.element.classList.add("is-active");
+function handleStepExit(response) {
+	// if ($step) {
+	console.count("classed");
+	d3.select(response.element).classed("is-active", false);
+	// }
 }
 
-function handleStepExit(response){
-	//response = {element, direction, index}
-	// console.log(response);
-	//remove color from current steo
-	response.element.classList.remove("is-active");
+// scrollama event handlers
+function handleStepEnter(response) {
+	$step = d3.select(response.element);
+
+	// add color to current step only
+	// if ($step) {
+	$step.classed("is-active", true);
+	console.count("classed");
+	// }
+
+	$step.style("background", "#ff00002e");
+
+	// create new chart
+	const key = $step.attr("data-step");
+
+	// console.log("response.element", response.element);
+	// console.log("$step", $step);
+	// console.log("key:", key);
+
+	createChart(key);
 }
 
-function init(){
-	//1. setup the scroller with bare-bones options
-	//		This will initialize trigger observations
-	//2. Bind scrollama event handlers
-	scroller
-		.setup({
-			step: "#scrolly article .step",
-			debug: true,
-			offset: 0.1,
-		})
-		.onStepEnter(handleStepEnter)
-		.onStepExit(handleStepExit);
+/* function handleStepProgress(response) {
+  // console.log(response);
+  // $figure.style("opacity", response.progress);
+  // $step = d3.select(response.element);
+  // console.log($step.attr("data-step"));
+  $step.select(".progress").text(d3.format(".1%")(response.progress));
+} */
 
-	
-
+function init() {
+  // 1. setup the scroller passing options
+  // 		this will also initialize trigger observations
+  // 2. bind scrollama event handlers (this can be chained like below)
+  scroller
+    .setup({
+      step: "#scrolly .triggers .step",
+      debug: true,
+      //progress: true,
+    })
+    .onStepEnter(handleStepEnter)
+    .onStepExit(handleStepExit)
+    //.onStepProgress(handleStepProgress);
 }
-
-//kick things off
-init();
