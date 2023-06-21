@@ -4,7 +4,7 @@ var map_valence = [];
 var mes_lanzamiento = [];
 var valence_por_mes = [];
 
-d3.csv("../data/results_global.csv", d3.autoType).then(function (data) {
+d3.csv("./data/results_global.csv", d3.autoType).then(function (data) {
 	dataChart = data;
 
 	// kick things off
