@@ -18,8 +18,9 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 
 	for (i = 0; i < map_lanzamiento.length; i++) {
 		const element = map_lanzamiento[i];
-		mes_lanzamiento.push(meses[map_lanzamiento[i].getMonth()])
-		valence_por_mes[element.getMonth()] += map_valence[i];
+		mes_lanzamiento.push(element.getMonth())
+		/* valence_por_mes[element.getMonth()] += map_valence[i]; */
+		valence_por_mes[element.getMonth()-1] = (valence_por_mes[element.getMonth()-1] + map_valence[i])/2;
 	}
 
 	init();
@@ -28,24 +29,24 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 function createChart(key){
 	console.log(key);
 
-	if(key == "valence_mes"){
+	if( true/* key == "valence_mes" */){
 		let newchart = Plot.plot({
-			width: window.innerWidth-50,
-			height: window.innerHeight-50,
+			width: window.innerWidth-100,
+			height: window.innerHeight-100,
 			grid: true,
 			marginTop: 50,
-			marginLeft: 50,
-			marginRight: 50,
+			marginLeft: 100,
+			marginRight: 100,
 			x: {
 				ticks: 10,
-				label: valence,
+				label: mes_lanzamiento,
 				axis: "bottom",
 			},
 			marks: [
 				Plot.image(
 					dataChart,
 					Plot.dodgeY({
-						x: valence,
+						x: mes_lanzamiento,
 						padding: 5,
 						r: 45,
 						anchor: "middle",
@@ -53,6 +54,14 @@ function createChart(key){
 						width: 90,
 					})
 				),
+				Plot.line(
+					data,
+					{
+						x: [1,2,3,4,5,6,7,8,9,10,11,12],
+						y: valence_por_mes,
+						curve: 'natural',
+					}
+				)
 			],
 		});
 	}
@@ -62,5 +71,5 @@ function createChart(key){
 		.append(() => newchart)
 		.attr("color", "#fff");
 
-	console.log("changed???? -------------------------")
+	console.log("changed -------------------------")
 }
