@@ -55,6 +55,7 @@ function createChart(key){
 		],
 	});
 
+	d3.select("#graph svg").remove();
 	var elem = d3.select("#graph")
 		.append(() => newchart)
 		.attr("color", "#fff");
