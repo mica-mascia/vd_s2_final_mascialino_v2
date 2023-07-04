@@ -1,4 +1,4 @@
-const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+const meses = ["", "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 var map_lanzamiento = [];
 var map_valence = [];
 var mes_lanzamiento = [];
@@ -21,7 +21,7 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 
 	for (i = 0; i < map_lanzamiento.length; i++) {
 		const element = map_lanzamiento[i];
-		var mes = element.getMonth();
+		var mes = element.getMonth()+1;
 		mes_lanzamiento.push(mes)
 		console.log(mes);
 		valence_por_mes[mes] += map_valence[i];
@@ -99,7 +99,7 @@ function createChart(key){
 	//}
 	
 	d3.select("#graph svg").remove();
-	
+
 	var elem = d3.select("#graph")
 		.append(() => newchart)
 		//.append(() => axischart)
