@@ -2,7 +2,7 @@ const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "
 var map_lanzamiento = [];
 var map_valence = [];
 var mes_lanzamiento = [];
-var valence_por_mes = new Map();
+var valence_por_mes = [];
 
 d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global.csv", d3.autoType).then(function (data) {
 	dataChart = data;
