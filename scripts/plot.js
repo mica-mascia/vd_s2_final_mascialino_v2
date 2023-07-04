@@ -42,7 +42,7 @@ function createChart(key){
 
 	newchart = Plot.plot;
 
-	if( true === true ){
+	//if( true === true ){
 	/* if( key == "valence_mes" ){ */
 		console.log("in")
 		newchart = Plot.plot({
@@ -98,7 +98,7 @@ function createChart(key){
 			},
 
 		}); */
-	}
+	//}
 	
 	d3.select("#graph svg").remove();
 	var elem = d3.select("#graph")
