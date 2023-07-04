@@ -43,6 +43,7 @@ function createChart(key){
 	let newchart = Plot.plot;
 
 	if( true/* key == "valence_mes" */){
+		console.log("in")
 		newchart = Plot.plot({
 			width: window.innerWidth-100,
 			height: window.innerHeight-100,
