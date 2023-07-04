@@ -40,7 +40,7 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 function createChart(key){
 	console.log(key);
 
-	let newchart;
+	let newchart = Plot.plot;
 
 	if( true/* key == "valence_mes" */){
 		newchart = Plot.plot({
