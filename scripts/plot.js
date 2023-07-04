@@ -21,10 +21,9 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 
 	for (i = 0; i < map_lanzamiento.length; i++) {
 		const element = map_lanzamiento[i];
-		var mes = element.getMonth();
-		process.stdout.write(mes, "+1=");
-		mes++;
-		console.log(mes);
+		var mespre = element.getMonth();
+		mes = mespre + 1;
+		console.log(mespre, "+1=",mes);
 		mes_lanzamiento.push(mes)
 		valence_por_mes[mes] += map_valence[i];
 		valores_por_mes[mes]++;
