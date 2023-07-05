@@ -31,7 +31,7 @@ function handleStepEnter(response) {
 	var aux = $step.attr("data-step");
 
 	if(aux == "none"){
-		aux = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		aux = [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5];
 	}
 
 	const key = aux;
