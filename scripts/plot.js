@@ -87,7 +87,7 @@ function createChart(key){
 				dataChart,
 				{
 					x: [0,1,2,3,4,5,6,7,8,9,10,11,12],
-					y: (d) => valence_por_mes[d] == 0 ? NaN : d.Close,
+					y: (valence_por_mes) => rellenarDataFaltante(d),
 					curve: 'natural',
 					label: null,
 
@@ -118,4 +118,12 @@ function createChart(key){
 		.append(() => newchart)
 		//.append(() => axischart)
 		.attr("color", "#fff");
+}
+
+function rellenarDataFaltante(dato){
+	if(dato < 0){
+		dato = NaN;
+	}else{
+		dato.close;
+	}
 }
