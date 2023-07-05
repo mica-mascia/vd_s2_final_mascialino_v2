@@ -45,6 +45,7 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 		y: {
 			domain: [0, 1],
 			ticks: 10,
+			label: "nivel de alegría",
 		},
 		marks: [
 			Plot.image(
@@ -99,7 +100,10 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 });
 
 function createChart(key){
+	console.log(key);
+
 	console.log("created");
+
 	newchart = Plot.plot({
 		width: window.innerWidth-100,
 		height: window.innerHeight-100,
@@ -107,7 +111,7 @@ function createChart(key){
 		marginTop: 150,
 		marginLeft: 50,
 		marginRight: 50,
-		x:{
+		/* x:{
 			ticks: 14,
 			tickFormat: (d) => meses[d],
 			label: "mes de lanzamiento",
@@ -116,21 +120,21 @@ function createChart(key){
 		y: {
 			domain: [0, 1],
 			ticks: 10,
-		},
+		}, */
 		marks: [
 			Plot.image(
 				dataChart,
-				Plot.dodgeY({
-					x: mes_lanzamiento,
+				Plot.dot({
+					x: key,
+					y: valence,
 					padding: 5,
 					r: 40,
-					anchor: "middle",
 					src: "imagen",
 					width: 80,
 					label: null,
 				})
 			),
-			Plot.line(
+			/* Plot.line(
 				dataChart,
 				{
 					x: [0,1,2,3,4,5,6,7,8,9,10,11],
@@ -158,7 +162,7 @@ function createChart(key){
 					label: null,
 
 				}
-			),
+			), */
 		],
 	});
 	
