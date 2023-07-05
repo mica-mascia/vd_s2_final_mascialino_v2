@@ -29,6 +29,10 @@ function handleStepEnter(response) {
 
 	// create new chart
 	const key = $step.attr("data-step");
+	
+	if(key == "none"){
+		key = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+	}
 
 	console.log("key: ", key);
 
