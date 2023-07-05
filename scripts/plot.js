@@ -46,7 +46,7 @@ function createChart(key){
 
 	newchart = Plot.plot({
 		width: window.innerWidth-100,
-		height: window.innerHeight-300,
+		height: window.innerHeight-100,
 		grid: true,
 		marginTop: 150,
 		marginLeft: 50,
@@ -65,6 +65,7 @@ function createChart(key){
 				dataChart,
 				Plot.dodgeY({
 					x: mes_lanzamiento,
+					domain: [0,1],
 					padding: 5,
 					r: 40,
 					anchor: "middle",
