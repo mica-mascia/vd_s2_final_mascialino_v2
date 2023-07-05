@@ -122,18 +122,12 @@ function createChart(key){
 			ticks: 10,
 		},
 		marks: [
-			/* Plot.image(
-				dataChart,
-				Plot.dot({
-					x: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],
-					y: "valence",
-					label: null,
-				})
-			), */
-			Plot.dot(dataChart, {
+			Plot.image(dataChart, {
 				x: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],
 				y: "valence",
-			})
+				src: "imagen",
+				label: null,
+			}),
 		],
 	});
 	
