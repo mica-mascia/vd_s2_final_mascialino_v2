@@ -126,7 +126,7 @@ function createChart(key){
 				dataChart,
 				Plot.dot({
 					x: key,
-					y: valence,
+					y: "valence",
 					padding: 5,
 					r: 40,
 					src: "imagen",
