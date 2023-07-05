@@ -46,10 +46,10 @@ function createChart(key){
 
 	newchart = Plot.plot({
 		width: window.innerWidth-100,
-		height: window.innerHeight-100,
+		height: window.innerHeight-300,
 		grid: true,
-		marginTop: 50,
-		marginLeft: 100,
+		marginTop: 150,
+		marginLeft: 50,
 		marginRight: 50,
 		x:{
 			ticks: 14,
