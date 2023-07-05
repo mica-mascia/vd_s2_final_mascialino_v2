@@ -67,7 +67,7 @@ function createChart(key){
 					x: mes_lanzamiento,
 					padding: 5,
 					r: 40,
-					anchor: "middle",
+					anchor: "bottom",
 					src: "imagen",
 					width: 80,
 					label: null,
