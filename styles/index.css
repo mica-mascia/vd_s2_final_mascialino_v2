@@ -146,7 +146,7 @@
 		background-color: transparent !important;
 	}
 
-	#graph{
+	#graph1, #graph2{
 		position: sticky;
 		top: -4.5vh;
 	}
