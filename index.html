@@ -10,6 +10,9 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png">
+
+		<script src="scripts/readMore.js"></script>
+
 		<title>Mi música</title>
 	</head>
 	<body class="bg-dark">
@@ -86,12 +89,16 @@
 
 			<div id="graph" style="height: 100vh; width: 100vw; fill: transparent; ">
 				<section id="titulo" class="green bg-dark"> <h2>Alegría de las canciones por estación</h2></section>
-
-				<!-- <section id="titulo" class="green bg-dark"> <h2>Gráfico: valence</h2> </section> -->
 			</div>
-			<section>
-				<div class="readmore right" style="top: 120vh;" onclick="mostrarInfo(datosTomados)"> ¿Qué datos se tomaron?</div>
+
+			<section class="graph-caption">
+				<section id="titulo" class="green bg-dark"> <h3>&nbsp;&nbsp; ¿Y esto qué significa?</h3></section>
+				<button class="readmore right" style="top: 120vh;" onclick="mostrarInfo(1)"> Datos tomados</button> <br>
+				<button class="readmore right" style="top: 120vh;" onclick="mostrarInfo(1)"> ¿Cómo se mide la alegría?</button> <br>
+				<button class="readmore right" style="top: 120vh;" onclick="mostrarInfo(1)"> Sobre los gráficos</button> <br>
+				<button class="readmore right" style="top: 120vh;" onclick="mostrarInfo(1)"> Conclusiones</button>
 			</section>
+			
 
 			<article class="triggers" style="visibility: hidden;">
 				
@@ -122,7 +129,6 @@
 		<script src="https://unpkg.com/scrollama"></script>
 		<script src="scripts/scrolly.js"></script>
 		<script src="scripts/plot.js"></script>
-		<script src="scripts/readMore.js"></script>
 	</body>
 </html>
 

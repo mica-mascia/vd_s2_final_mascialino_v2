@@ -31,12 +31,8 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 	for(i=1; i<13;i++){
 		//valence_por_mes.set(meses[i], (valence_por_mes.get(meses[i])/valores_por_mes[i]));
 		valence_por_mes[i] = valence_por_mes[i]/valores_por_mes[i];
-		console.log(valence_por_mes[i])
 	}
 
-	diff = (valence_por_mes[11]-valence_por_mes[6])/5;
-	console.log(valence_por_mes[11], "-", valence_por_mes[6], "=", valence_por_mes[11]-valence_por_mes[6],". En cada punto baja ", diff)
-	console.log(valence_por_mes[6]+diff, ", ", valence_por_mes[6]+(2*diff), ", ", valence_por_mes[6]+(3*diff), ", ", valence_por_mes[6]+(4*diff), ", ", valence_por_mes[6]+(5*diff),", ", valence_por_mes[6]+(6*diff))
 	init();
 });
 

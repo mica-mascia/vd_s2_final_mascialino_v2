@@ -52,7 +52,7 @@ function init() {
   scroller
     .setup({
       step: "#scrolly .triggers .step",
-      debug: true,
+      debug: false,
       //progress: true,
     })
     .onStepEnter(handleStepEnter)

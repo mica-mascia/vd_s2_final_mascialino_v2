@@ -1,6 +1,6 @@
 function mostrarInfo(cuadro){
 	if(cuadro == "datosTomados"){
-		console.log("Yes!");
+		alert("yes!");
 	}
-	console.log("Default")
+	alert("Default")
 }

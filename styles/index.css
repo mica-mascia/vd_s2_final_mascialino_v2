@@ -126,18 +126,6 @@
 		background-color: #3b3b3bb0;
 	}
 
-	.readmore{
-		position: absolute;
-		background-color: rgba(0,255,255,0.5);
-		display: inline-block;
-		height: 17vh;
-		width: 17vw;
-		padding: 3vh;
-
-	}
-	.readmore.right{
-		border-radius: 0 10px 10px 0;
-	}
 /*#endregion scrolly start*/
 
 /*------------------------------------------------------------------------------- SCROLLY ACTIVE*/
@@ -189,5 +177,25 @@
 
 	.list-title{
 		font-size:larger;
+	}
+
+	.graph-caption{
+		position: inherit;
+		background-color: rgba(var(--bs-dark-rgb), 0.6);
+		height: 100vh;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.readmore{
+		/* position: absolute; */
+		background-color: rgba(0,255,255,0.5);
+		/* display: inline-block; */
+		width: 25vw;
+		padding: 2vh;
+		z-index: 200;
+	}
+	.readmore.right{
+		border-radius: 0 10px 10px 0;
 	}
 /*#endregion text*/
