@@ -130,7 +130,7 @@ function createChart(key){
 					label: null,
 				})
 			), */
-			Plot.dot(data, {
+			Plot.dot(dataChart, {
 				x: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],
 				y: "valence",
 			})
