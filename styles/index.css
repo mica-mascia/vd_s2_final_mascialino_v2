@@ -219,8 +219,8 @@
 
 	.graph-caption p{
 		display: inline-block;
-		margin: auto;
-		width: 25vw;
+		padding: auto;
+		margin-top: 4vh;
 		text-align: center;
 	}
 
