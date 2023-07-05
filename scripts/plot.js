@@ -59,6 +59,7 @@ function createChart(key){
 		},
 		y: {
 			domain: [0, 1],
+			ticks: 10,
 		},
 		marks: [
 			Plot.image(
