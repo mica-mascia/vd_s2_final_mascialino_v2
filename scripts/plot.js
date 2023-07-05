@@ -30,6 +30,7 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 	for(i=1; i<13;i++){
 		//valence_por_mes.set(meses[i], (valence_por_mes.get(meses[i])/valores_por_mes[i]));
 		valence_por_mes[i] = valence_por_mes[i]/valores_por_mes[i];
+		console.log(valence_por_mes[i])
 	}
 
 	init();
