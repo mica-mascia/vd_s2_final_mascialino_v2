@@ -111,16 +111,15 @@ function createChart(key){
 		marginTop: 150,
 		marginLeft: 50,
 		marginRight: 50,
-		/* x:{
-			ticks: 14,
-			tickFormat: (d) => meses[d],
+		x:{
+			ticks: 10,
 			label: "mes de lanzamiento",
 			axis: "bottom",
 		},
 		y: {
 			domain: [0, 1],
 			ticks: 10,
-		}, */
+		},
 		marks: [
 			Plot.image(
 				dataChart,
@@ -134,35 +133,6 @@ function createChart(key){
 					label: null,
 				})
 			),
-			/* Plot.line(
-				dataChart,
-				{
-					x: [0,1,2,3,4,5,6,7,8,9,10,11],
-					y: [,,,,,,0.62, 0.555, 0.49, 0.425, 0.36, 0.295],
-					label: null,
-					stroke: "gray",
-				}
-			),
-			Plot.line(
-				dataChart,
-				{
-					x: [0,1,2,3,4,5,6,7,8,9,10,11],
-					y: valence_por_mes,
-					curve: 'natural',
-					label: null,
-
-				}
-			),
-			Plot.dot(
-				dataChart,
-				{
-					x: [0,1,2,3,4,5,6,7,8,9,10,11],
-					y: valence_por_mes,
-					//curve: 'natural',
-					label: null,
-
-				}
-			), */
 		],
 	});
 	
