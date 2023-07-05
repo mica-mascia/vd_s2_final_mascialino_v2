@@ -6,7 +6,7 @@ var valence_por_mes = [];
 
 d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global.csv", d3.autoType).then(function (data) {
 	dataChart = data;
-	
+
 
 	// kick things off
 
@@ -82,7 +82,7 @@ function createChart(key){
 				dataChart,
 				{
 					x: [1,2,3,4,5,6,7,8,9,10,11,12],
-					y: [0.23, 0.726,,,,0.62, 0.555, 0.49, 0.425, 0.36, 0.295, 0.23],
+					y: [0.23, 0.726,,,,0.62, 0.555, 0.49, 0.425, 0.36, 0.295],
 					label: null,
 					stroke: "gray",
 				}
