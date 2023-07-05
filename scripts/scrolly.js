@@ -28,10 +28,10 @@ function handleStepEnter(response) {
 	$step.style("background", "#ff00002e");
 
 	// create new chart
-	const key = $step.attr("data-step");
-	
-	if(key == "none"){
-		key = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+	if($step.attr("data-step") == "none"){
+		const key = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+	}else{
+		const key = $step.attr("data-step");
 	}
 
 	console.log("key: ", key);
