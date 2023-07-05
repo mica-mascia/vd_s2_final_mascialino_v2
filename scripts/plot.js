@@ -115,10 +115,6 @@ function createChart(key){
 			label: "mes de lanzamiento",
 			axis: "bottom",
 		},
-		y: {
-			domain: [0, 1],
-			ticks: 10,
-		},
 		marks: [
 			Plot.image(dataChart, {
 				y: key,
