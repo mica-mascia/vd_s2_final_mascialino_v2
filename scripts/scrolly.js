@@ -30,6 +30,8 @@ function handleStepEnter(response) {
 	// create new chart
 	const key = $step.attr("data-step");
 
+	console.log("key: ", key);
+
 	// console.log("response.element", response.element);
 	// console.log("$step", $step);
 	// console.log("key:", key);
