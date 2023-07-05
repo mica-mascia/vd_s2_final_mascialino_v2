@@ -127,9 +127,8 @@ function createChart(key){
 				x: "valence",
 				src: "imagen",
 				label: null,
-				padding: 5,
-				r: 40,
-				width: 80,
+				r: 30,
+				width: 60,
 			}),
 		],
 	});
