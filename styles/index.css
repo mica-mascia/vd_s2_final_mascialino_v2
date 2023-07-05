@@ -217,4 +217,8 @@
 	.spacer{
 		height: 20vh;
 	}
+
+	.graph-caption p{
+		margin: 1vh, 5vw;
+	}
 /*#endregion text*/
