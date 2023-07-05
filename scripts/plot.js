@@ -123,10 +123,13 @@ function createChart(key){
 		},
 		marks: [
 			Plot.image(dataChart, {
-				x: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],
-				y: "valence",
+				y: key,
+				x: "valence",
 				src: "imagen",
 				label: null,
+				padding: 5,
+				r: 40,
+				width: 80,
 			}),
 		],
 	});
