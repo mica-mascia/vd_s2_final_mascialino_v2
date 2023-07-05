@@ -52,7 +52,7 @@ function createChart(key){
 		marginLeft: 100,
 		marginRight: 50,
 		x:{
-			ticks: 13,
+			ticks: 14,
 			tickFormat: (d) => extraerMes(d),
 			label: "mes de lanzamiento",
 			axis: "bottom",
