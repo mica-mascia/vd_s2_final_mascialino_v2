@@ -112,6 +112,7 @@ function createChart(key){
 		marginLeft: 50,
 		marginRight: 50,
 		x:{
+			domain: [0,1],
 			ticks: 10,
 			label: "mes de lanzamiento",
 			axis: "bottom",
@@ -121,14 +122,18 @@ function createChart(key){
 			ticks: 10,
 		},
 		marks: [
-			Plot.image(
+			/* Plot.image(
 				dataChart,
 				Plot.dot({
 					x: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],
 					y: "valence",
 					label: null,
 				})
-			),
+			), */
+			Plot.dot(data, {
+				x: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],
+				y: "valence",
+			})
 		],
 	});
 	
