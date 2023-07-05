@@ -126,10 +126,6 @@ function createChart(key){
 				Plot.dot({
 					x: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],
 					y: "valence",
-					padding: 5,
-					r: 40,
-					src: "imagen",
-					width: 80,
 					label: null,
 				})
 			),
