@@ -33,7 +33,7 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 		console.log(valence_por_mes[i])
 	}
 
-	diff = (valence_por_mes[11]-valence_por_mes[6])/4;
+	diff = (valence_por_mes[11]-valence_por_mes[6])/5;
 	console.log(valence_por_mes[11], "-", valence_por_mes[6], "=", valence_por_mes[11]-valence_por_mes[6],". En cada punto baja ", diff)
 	console.log(valence_por_mes[6]+diff, ", ", valence_por_mes[6]+(2*diff), ", ", valence_por_mes[6]+(3*diff), ", ", valence_por_mes[6]+(4*diff), ", ",)
 	init();
@@ -101,7 +101,7 @@ function createChart(key){
 				dataChart,
 				{
 					x: [1,2,3,4,5,6,7,8,9,10,11,12],
-					y: [,,,,,0.62, 0.5, 0.5, 0.5, 0.5, 0.295, 0],
+					y: [,,,,,0.62, 0.53875, 0.4575, 0.37625, 0.295, 0],
 					curve: 'natural',
 					label: null,
 
