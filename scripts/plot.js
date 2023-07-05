@@ -81,7 +81,7 @@ function createChart(key){
 			Plot.line(
 				dataChart,
 				{
-					x: [1,2,3,4,5,6,7,8,9,10,11,12],
+					x: [0,1,2,3,4,5,6,7,8,9,10,11],
 					y: [0.23, 0.726,,,,0.62, 0.555, 0.49, 0.425, 0.36, 0.295],
 					label: null,
 					stroke: "gray",
