@@ -65,7 +65,6 @@ function createChart(key){
 				dataChart,
 				Plot.dodgeY({
 					x: mes_lanzamiento,
-					domain: [0,1],
 					padding: 5,
 					r: 40,
 					anchor: "middle",
