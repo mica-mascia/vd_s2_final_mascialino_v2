@@ -210,7 +210,7 @@
 	}
 	.second-title p{
 		margin-top: 55vh;
-		font-size: large;
+		font-size: x-large;
 	}
 
 	.spacer{
@@ -218,6 +218,13 @@
 	}
 
 	.graph-caption p{
-		margin: 1vh, 5vw;
+		display: inline-block;
+		margin: auto;
+		width: 25vw;
+		text-align: center;
+	}
+
+	.graph-caption .comparacion{
+		text-align: center;
 	}
 /*#endregion text*/
