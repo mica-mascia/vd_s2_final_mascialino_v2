@@ -125,6 +125,19 @@
 		text-align: center;
 		background-color: #3b3b3bb0;
 	}
+
+	.readmore{
+		position: absolute;
+		background-color: rgba(0,255,255,0.5);
+		display: inline-block;
+		height: 17vh;
+		width: 17vw;
+		padding: 3vh;
+
+	}
+	.readmore.right{
+		border-radius: 0 10px 10px 0;
+	}
 /*#endregion scrolly start*/
 
 /*------------------------------------------------------------------------------- SCROLLY ACTIVE*/
