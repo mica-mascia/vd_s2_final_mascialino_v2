@@ -102,8 +102,6 @@ d3.csv("https://mica-mascia.github.io/vd_s2_final_mascialino/data/results_global
 function createChart(key){
 	console.log(key);
 
-	console.log("created");
-
 	newchart = Plot.plot({
 		width: window.innerWidth-100,
 		height: window.innerHeight-100,
