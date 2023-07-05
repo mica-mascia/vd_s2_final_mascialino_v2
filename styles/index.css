@@ -183,6 +183,7 @@
 		position: inherit;
 		background-color: rgba(var(--bs-dark-rgb), 0.6);
 		height: 100vh;
+		width: 50vw;
 		display: table-cell;
 		vertical-align: middle;
 	}
@@ -195,8 +196,21 @@
 		padding: 2vh;
 		z-index: 200;
 		border: none;
+		margin-top: 2vh;
 	}
 	.readmore.right{
 		border-radius: 0 10px 10px 0;
+	}
+
+	.second-title{
+		height: 100vh;
+		width: 100vw;
+		position: sticky;
+		top: 0;
+		padding: 10vw;
+	}
+	.second-title p{
+		margin-top: 65vh;
+		font-size: large;
 	}
 /*#endregion text*/
